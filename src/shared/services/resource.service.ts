@@ -6,7 +6,7 @@ export class ResourceService {
 
 	constructor(public api: ApiService) {}
 
-	getAll(){
-    	return this.api.GET('/resource/get-all');
+	getAll(id_university: number){
+    	return this.api.GET(`/resource/get-all/${ id_university }`);
   	}
 }

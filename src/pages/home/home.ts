@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { ListTopicsPage } from '../list-topics/list-topics';
+import { ARView } from '../ar-view/ar-view';
 
 @Component({
   selector: 'page-home',
@@ -15,5 +16,9 @@ export class HomePage {
 
   public openLearn(){
   	this.navCtrl.push(ListTopicsPage);
+  }
+
+  public openMap(){
+  	this.navCtrl.push(ARView);
   }
 }
