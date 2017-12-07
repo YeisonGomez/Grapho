@@ -13,12 +13,9 @@ export class University {
 
 	public get(id: number): any{
 		return this.universityService.get(id)
-		.subscribe((data) => {
+		.then((data) => {
 			console.log(data);
 			return data;
-		}, (error) => {
-			console.log(error);
-			return error;
 		});
 	}
 

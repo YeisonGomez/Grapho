@@ -9,4 +9,8 @@ export class TopicService {
 	getAll(){
     	return this.api.GET('/topic/get-all');
   	}
+
+  	getDetail(topic_id){
+    	return this.api.GET(`/topic/get-sub-topics/${ topic_id }`);
+  	}
 }

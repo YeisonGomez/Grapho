@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{topicDaddy.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-slides pager *ngIf="topic && topic[slideActually].imagen != undefined && topic[slideActually].imagen[0] != undefined && topic[slideActually].imagen[0].id != null">
+    <ion-slide *ngFor="let item of topic[slideActually].imagen">
+      <img src="{{item.url}}"/>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides pager (ionSlideDidChange)="slideChanged($event)">
+    <ion-slide *ngFor="let item of topic">
+      <ion-card-content>
+      <ion-card-title>
+        {{item.name}}
+      </ion-card-title>
+      <p>
+        {{item.description}}
+      </p>
+    </ion-card-content>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

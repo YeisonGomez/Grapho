@@ -16,7 +16,7 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       statusBar.styleDefault();
-
+      /*
       WikitudePlugin._sdkKey = "SUmO1hz0KNXsiTAFp/L+INGGtMC4HIq+8Zio11BxnSYaj0JEE2qdFTfM4JH6V0t6AuyGunNYL6GrDvd87Tr/36knWvpmYufl4bsC8xo6KPy2GgakJyIGqixwMd8TSGl44AjNB/9zrffpnmNrKglyCY5TAGlAmFq4csdkoIwBgodTYWx0ZWRfX/EIV90kPa+U9K2avlwyqyL9awafoOmXHfhlkACYhphD3jOgE40Z8Oe00/xdNdfDfOKo9Dj9Hfl4zjGGDICniqlIAStQ/Z56niaecpfYiUyaQWnMzb46TsToDipp2HDsLljCGEPnO4POwy2o6Io+nlQQ2zH1IFui0X77iWLkdEEtjDv+sxKAt98fcHMsPOeaeWCFMUosRD0E0yVTAaOFAH0xfIzeorJRis+3+iHeIULcfJokgKbQtN0kFAlNZxK032440uT65lE8J72t6TAzRZj9Gk3zoGh8Ye66MsNJfEmq598vSL8TJiM31G1QG9wwaaudx5cKmFVGWRi1JePP7dpSuOBtzjZqnnZ8m4lzY2RiOE2+S51PGlaTXN8KzvlZv1gc0mdvUQBp0/EodFXiU/Z9YRqAQJKJ/b79KZNBGI7JaxJU9b/+UgUPnU0sfJ2sdQmwU/DJAsAGUyDA7Tzid2mLD4QzAbzTzs4pxnnsCKKcdX2SBTnUkM6X34BfY55dCSkrbrzEzon0";
       
       WikitudePlugin.isDeviceSupported(
@@ -54,7 +54,7 @@ export class MyApp {
      
       WikitudePlugin.onWikitudeError = function() {
           console.log("Something went wrong");
-      }
+      }*/
 
     });
   }

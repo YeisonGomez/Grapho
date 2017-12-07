@@ -11,6 +11,8 @@ import { UniverityService } from './services/university.service';
     CommonModule
   ],
   declarations: [
+  ],
+  providers: [
   	ApiService,
   	UniverityService,
   	ResourceService,
