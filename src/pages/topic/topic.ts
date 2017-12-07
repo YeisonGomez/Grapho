@@ -15,12 +15,10 @@ export class TopicPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private topicService: TopicService) {
   	this.topicDaddy = this.navParams.data.topic;
-  	console.log(this.topicDaddy);
   	this.getTopic();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TopicPage');
   }
 
   public getTopic() {
@@ -32,14 +30,12 @@ export class TopicPage {
 						d.imagen = JSON.parse(d.imagen);
 						return d;
 					});
-					console.log(this.topic[0].imagen);
 				}
 			});
 	}
 
 	public slideChanged(index){
 		this.slideActually = index.realIndex;
-		console.log(this.slideActually);
 	}
 
 
