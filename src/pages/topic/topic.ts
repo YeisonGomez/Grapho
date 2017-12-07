@@ -32,7 +32,7 @@ export class TopicPage {
 						d.imagen = JSON.parse(d.imagen);
 						return d;
 					});
-					console.log(this.topic[0].imagen[0]);
+					console.log(this.topic[0].imagen);
 				}
 			});
 	}
